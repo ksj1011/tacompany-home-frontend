@@ -7,7 +7,6 @@ import {Link} from 'react-scroll';
 //background-color: ${({ isScroll, theme }) => isScroll ? theme.palette.white : 'black'};
 const S = {
   Wrapper: styled.div`
-    width: 100%;
     position: sticky;
     top: -1px;
     z-index: 1000;
