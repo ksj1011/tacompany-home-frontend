@@ -83,6 +83,9 @@ const S = {
     color: ${props => props.theme.palette.secondary};
     cursor: pointer;
   `,
+  ButtonBox: styled.div`
+    display: flex;
+`,
 };
 
 
@@ -100,7 +103,10 @@ const Works = () => {
         Call : 010 - 4584 - 4008 <br />
         Email : nidnt91@gmail.com
       </S.Title>
-      <Button fill="solid" onClick={()=>console.log('aaa')}>카카오 문의하기</Button>
+      <S.ButtonBox>
+        <a href="http://pf.kakao.com/_KxjxixfK" target="_blank"><Button fill="solid" style={{marginRight:'10px'}} >카카오 문의하기</Button></a>
+        <a href="https://forms.gle/gu5qVyekssrEseZp8" target="_blank"><Button>바로 문의하기</Button></a>
+      </S.ButtonBox>
     </S.Wrapper>
   );
 };

@@ -105,6 +105,16 @@ const WORKS_ITEMS = [
   },
 ];
 
+const WORKS_ITEMS2 = [
+  {
+    image: worksImage01,
+    title: 'Volutpat odio',
+    label: 'Dec 14th, 2019',
+    description:
+      'Facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing. In hac habitasse platea dictumst.',
+  }
+];
+
 const Works = () => {
   const animatedItem = {
     0: useScrollFadeIn('up', 1),
@@ -117,12 +127,26 @@ const Works = () => {
       <S.Label>포트폴리오</S.Label>
       <S.List>
         {WORKS_ITEMS.map((item, index) => (
-          <S.ListItem key={item.title} {...animatedItem[index]}>
+          <S.ListItem key={item.title} >
             <S.ItemImage image={item.image} />
           </S.ListItem>
         ))}
       </S.List>
-      <Button fill="outline">더보기</Button>
+      <S.List>
+        {WORKS_ITEMS.map((item, index) => (
+          <S.ListItem key={item.title} >
+            <S.ItemImage image={item.image} />
+          </S.ListItem>
+        ))}
+      </S.List>
+      <S.List>
+        {WORKS_ITEMS2.map((item, index) => (
+          <S.ListItem key={item.title} >
+            <S.ItemImage image={item.image} />
+          </S.ListItem>
+        ))}
+      </S.List>
+      <a href="https://www.youtube.com/channel/UCxZg5WfNu6zUGVkxUhoOJJw" target="_blank"><Button fill="outline">더보기</Button></a>
     </S.Wrapper>
   );
 };

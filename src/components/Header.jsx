@@ -89,10 +89,6 @@ const NAVIGATION_ITEMS = [
         name: '유튜버교육'
     },
     {
-        link: 'home',
-        name: '직원소개'
-    },
-    {
         link: 'contact',
         name: '의뢰하기'
     },
