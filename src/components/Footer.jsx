@@ -6,7 +6,6 @@ import {talogoblack} from '../assets';
 
 const S = {
   Wrapper: styled.footer`
-    width: 100%;
     max-width: 1180px;
     margin: auto;
     padding: 50px 10px 30px;
