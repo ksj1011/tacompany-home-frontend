@@ -60,8 +60,8 @@ const S = {
         font-size: 0.8rem;
     }
     @media (max-width: 710px){
-        margin-top:5px;
         font-size: 0.7rem;
+        margin: 5px .2rem 0;
     }
   `,
   ButtonWrapper: styled.div`
@@ -105,7 +105,7 @@ const Header = () => {
 
   const handleScroll = useCallback(() => {
     if (window.pageYOffset > 0) {
-      setIsScroll(true);      
+      setIsScroll(true);
     }
     if (window.pageYOffset === 0) {
       setIsScroll(false);
@@ -120,7 +120,7 @@ const Header = () => {
   }, [handleScroll]);
 
   const clickTest = () =>{
-    setIsScroll(true);  
+    setIsScroll(true);
   }
 
   return (
@@ -131,7 +131,7 @@ const Header = () => {
         </S.Logo>
         <S.Navigation>
           {NAVIGATION_ITEMS.map(item => (
-            <S.NavigationItem key={item} isScroll={isScroll} to={item.link} spy={true} smooth={true} onClick={clickTest} > 
+            <S.NavigationItem key={item} isScroll={isScroll} to={item.link} spy={true} smooth={true} onClick={clickTest} >
               {item.name}
             </S.NavigationItem>
           ))}
