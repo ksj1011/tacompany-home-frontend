@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useScrollFadeIn } from '../../../hooks';
 import { useScrollClipPath } from '../../../hooks';
 import { test1 } from '../../../assets';
 const S = {
@@ -19,6 +18,10 @@ const S = {
     color: black;
     margin-bottom: 3rem;
     font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Box: styled.div`
     display: flex;
@@ -63,43 +66,26 @@ const S = {
     color: ${props => props.theme.palette.secondary};
     cursor: pointer;
   `,
-  Image: styled.div`
-  width: 100%;
-  height: 650px;
-  background: no-repeat center/cover url(${test1});
-`,
+  ImageBox: styled.div`
+    position: relative;
+    margin: 0 auto;
+  `,
+  Image: styled.img`
+    width:100%;
+    height:auto;
+  `,
 };
-
-const SERVICES_ITEMS = [
-  {
-    title: 'Volutpat odio',
-    description:
-      'Facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing. In hac habitasse platea dictumst quisque sagittis purus.',
-    button: 'Get started',
-  },
-  {
-    title: 'Diam donec',
-    description:
-      'Adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Pulvinar elementum integer enim neque volutpat ac.',
-    button: 'Switch over',
-  },
-  {
-    title: 'Elit at imperdiet',
-    description:
-      'Dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent.',
-    button: 'Read more',
-  },
-];
 
 const Services2 = () => {
 
     const animatedImage = useScrollClipPath();
-    const animated = useScrollFadeIn('left', 2, 0);
   return (
     <S.Wrapper id="process">
       <S.Label>제작프로세스</S.Label>
       <S.Box>
-        <S.Image {...animatedImage} />
+        <S.ImageBox {...animatedImage}>
+            <S.Image src={test1} alt="제작프로세스" />
+        </S.ImageBox>
       </S.Box>
     </S.Wrapper>
   );

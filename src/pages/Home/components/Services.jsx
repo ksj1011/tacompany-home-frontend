@@ -13,6 +13,10 @@ const S = {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 992px){
+        margin-top: 450px;
+    }
   `,
   Label: styled.p`
     display: inline-block;
@@ -20,6 +24,10 @@ const S = {
     color: black;
     margin-bottom: 3rem;
     font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Box: styled.div`
     display: flex;
@@ -32,6 +40,11 @@ const S = {
     flex-direction: column;
     justify-content: center;
     width: 580px;
+    padding: 0 10px;
+    
+    @media (max-width: 992px){
+        padding: 0 10px;
+    }
   `,
   Text: styled.p`
     span {
@@ -40,6 +53,15 @@ const S = {
     }
     font-size:1.4rem;
     font-weight: 500;
+
+    @media (max-width: 992px){
+        span {
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        font-size: 1rem;
+        font-weight: 400;
+    }
   `,
   Description: styled.p`
     ${props => props.theme.typography.description};
@@ -65,10 +87,15 @@ const S = {
     cursor: pointer;
   `,
   Image: styled.div`
-  width: 375px;
-  height: 550px;
-  margin-right:50px;
-  background: no-repeat center/cover url(${ceo});
+    width: 375px;
+    height: 550px;
+    margin-right: 20px;
+    background: no-repeat center/cover url(${ceo});
+
+    @media (max-width: 992px){
+        height:300px;
+        margin-right:10px;
+    }
 `,
 };
 

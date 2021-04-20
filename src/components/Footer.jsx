@@ -9,15 +9,14 @@ const S = {
     width: 100%;
     max-width: 1180px;
     margin: auto;
-    padding: 50px 0 30px;
+    padding: 50px 10px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   `,
   Info: styled.div`
-    flex: 0 0 40%;
-    max-width: 40%;
+ 
   `,
   Logo: styled.span`
     ${props => props.theme.typography.label};

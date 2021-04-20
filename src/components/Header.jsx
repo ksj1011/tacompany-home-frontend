@@ -13,7 +13,8 @@ const S = {
     z-index: 1000;
     transition: all 0.2s ease-in-out;
     background-color: black;
-    box-shadow: none
+    box-shadow: none;
+    padding: 0 10px;
  `,
   Header: styled.header`
     width: 100%;
@@ -24,6 +25,12 @@ const S = {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 710px){
+        flex-direction: column;
+        justify-content: center;
+    }
   `,
   Logo: styled.span`
     color: white;
@@ -31,10 +38,12 @@ const S = {
     font-size: 1.5rem;
     flex: 0 0 25%;
     max-width: 25%;
+
+    @media (max-width: 710px){
+        margin-top:5px;
+    }
   `,
   Navigation: styled.div`
-    flex: 0 0 50%;
-    max-width: 50%;
     display: flex;
     justify-content: center;
   `,
@@ -44,6 +53,15 @@ const S = {
     cursor: pointer;
     &:hover {
       opacity: 0.5;
+    }
+    font-size: 1rem;
+
+    @media (max-width: 992px){
+        font-size: 0.8rem;
+    }
+    @media (max-width: 710px){
+        margin-top:5px;
+        font-size: 0.7rem;
     }
   `,
   ButtonWrapper: styled.div`

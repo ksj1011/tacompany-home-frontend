@@ -20,12 +20,20 @@ const S = {
     color: black;
     margin-bottom: 3rem;
     font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Title: styled.h2`
     ${props => props.theme.typography.subtitle};
     color: ${props => props.theme.palette.black};
     text-align: center;
     margin-bottom: 3rem;
+
+    @media (max-width: 992px){
+        font-size: 1.5rem;
+    }
   `,
   Description: styled.p`
     ${props => props.theme.typography.description};
@@ -87,7 +95,7 @@ const Works = () => {
 
   return (
     <S.Wrapper id="contact">
-      <S.Label>CONTACT US</S.Label>
+      <S.Label>의뢰하기</S.Label>
       <S.Title>
         Call : 010 - 4584 - 4008 <br />
         Email : nidnt91@gmail.com

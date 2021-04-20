@@ -10,6 +10,10 @@ const S = {
     width: 100%;
     height: 780px;
     background: no-repeat center/cover url(${heroBackground});
+
+    @media (max-width: 992px){
+        height: 600px;
+    }
   `,
   Wrapper: styled.div`
     width: 100%;
@@ -26,12 +30,22 @@ const S = {
     color: #fff;
     margin-bottom: 0.5rem;
     font-size: 2rem;
+    padding-left: 5px;
+
+    @media (max-width: 992px){
+        font-size: 1.5rem;
+    }
   `,
   Description: styled.p`
     ${props => props.theme.typography.description};
     color: ${props => props.theme.palette.white};
     font-size: 6rem;
     font-weight: 500;
+    padding-left: 5px;
+
+    @media (max-width: 992px){
+        font-size: 4rem;
+    }
   `,
 };
 

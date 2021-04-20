@@ -19,6 +19,10 @@ const S = {
     color: black;
     margin-bottom: 3rem;
     font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Box: styled.div`
     display: flex;
@@ -63,11 +67,14 @@ const S = {
     color: ${props => props.theme.palette.secondary};
     cursor: pointer;
   `,
-  Image: styled.div`
-  width: 100%;
-  height: 650px;
-  background: no-repeat center/cover url(${test2});
-`,
+  ImageBox: styled.div`
+    position: relative;
+    margin: 0 auto;
+  `,
+  Image: styled.img`
+    width:100%;
+    height:auto;
+  `,
 };
 
 const Services2 = () => {
@@ -78,7 +85,9 @@ const Services2 = () => {
     <S.Wrapper id="youtube">
       <S.Label>유튜버교육</S.Label>
       <S.Box>
-        <S.Image {...animatedImage} />
+      <S.ImageBox {...animatedImage}>
+            <S.Image src={test2} alt="제작프로세스" />
+        </S.ImageBox>
       </S.Box>
     </S.Wrapper>
   );

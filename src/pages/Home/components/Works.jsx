@@ -20,6 +20,10 @@ const S = {
     color: black;
     margin-bottom: 3rem;
     font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Title: styled.h2`
     ${props => props.theme.typography.subtitle};
@@ -103,9 +107,9 @@ const WORKS_ITEMS = [
 
 const Works = () => {
   const animatedItem = {
-    0: useScrollFadeIn('left', 1),
-    1: useScrollFadeIn('left', 1, 0.2),
-    2: useScrollFadeIn('left', 1, 0.4),
+    0: useScrollFadeIn('up', 1),
+    1: useScrollFadeIn('up', 1, 0.2),
+    2: useScrollFadeIn('up', 1, 0.4),
   };
 
   return (
@@ -118,7 +122,7 @@ const Works = () => {
           </S.ListItem>
         ))}
       </S.List>
-      <Button fill="outline">More Works</Button>
+      <Button fill="outline">더보기</Button>
     </S.Wrapper>
   );
 };
