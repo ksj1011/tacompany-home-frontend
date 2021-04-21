@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/tacompany-home-frontend/static/js/main.df457ede.chunk.js",
+    "main.js.map": "/tacompany-home-frontend/static/js/main.df457ede.chunk.js.map",
+    "runtime-main.js": "/tacompany-home-frontend/static/js/runtime-main.a6ea476b.js",
+    "runtime-main.js.map": "/tacompany-home-frontend/static/js/runtime-main.a6ea476b.js.map",
+    "static/js/2.f1f593eb.chunk.js": "/tacompany-home-frontend/static/js/2.f1f593eb.chunk.js",
+    "static/js/2.f1f593eb.chunk.js.map": "/tacompany-home-frontend/static/js/2.f1f593eb.chunk.js.map",
+    "index.html": "/tacompany-home-frontend/index.html",
+    "precache-manifest.322235a74f8db2a13e5f40ffdea759a6.js": "/tacompany-home-frontend/precache-manifest.322235a74f8db2a13e5f40ffdea759a6.js",
+    "service-worker.js": "/tacompany-home-frontend/service-worker.js",
+    "static/js/2.f1f593eb.chunk.js.LICENSE.txt": "/tacompany-home-frontend/static/js/2.f1f593eb.chunk.js.LICENSE.txt",
+    "static/media/bg-hero.png": "/tacompany-home-frontend/static/media/bg-hero.5cd57558.png",
+    "static/media/ceo.jpeg": "/tacompany-home-frontend/static/media/ceo.bcec988f.jpeg",
+    "static/media/img-contact.jpg": "/tacompany-home-frontend/static/media/img-contact.571bb83b.jpg",
+    "static/media/img-feature.jpg": "/tacompany-home-frontend/static/media/img-feature.37fef9b2.jpg",
+    "static/media/test1.png": "/tacompany-home-frontend/static/media/test1.b7633649.png",
+    "static/media/test2.png": "/tacompany-home-frontend/static/media/test2.b1ed4bdc.png",
+    "static/media/work.jpeg": "/tacompany-home-frontend/static/media/work.ee33ee88.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6ea476b.js",
+    "static/js/2.f1f593eb.chunk.js",
+    "static/js/main.df457ede.chunk.js"
+  ]
+}
