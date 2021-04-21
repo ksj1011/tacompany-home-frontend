@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { worksImage01 } from '../../../assets';
 import { Button } from '../../../components';
 import { useScrollFadeIn } from '../../../hooks';
+import YoutubePlay from '../../../components/YoutubePlay';
 
 const S = {
   Wrapper: styled.div`
@@ -36,22 +37,34 @@ const S = {
     color: ${props => props.theme.palette.black};
     margin-bottom: 4rem;
   `,
-  List: styled.ul`
+  // List: styled.ul`
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   margin-bottom: 4rem;
+  // `,
+  // ListItem: styled.li`
+  //   width: 380px;
+  //   box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.03);
+  //   border-radius: 0.5rem;
+  // `,
+  List: styled.div`
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
   `,
-  ListItem: styled.li`
-    width: 380px;
-    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.03);
-    border-radius: 0.5rem;
+  ListItem: styled.div`
+    cursor: pointer;
   `,
   ItemImage: styled.div`
     width: 100%;
-    height: 380px;
+    height: auto;
+    min-height: 200px;
     border-radius: 0.5rem;
+    border: 1px solid #e3e3e3;
     background: no-repeat center/cover url(${props => props.image});
   `,
   TextContainer: styled.div`
@@ -102,6 +115,18 @@ const WORKS_ITEMS = [
     label: 'Dec 14th, 2019',
     description:
       'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
+  },{
+    image: worksImage01,
+    title: 'Eros donec ac odio2',
+    label: 'Dec 14th, 2019',
+    description:
+      'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
+  },{
+    image: worksImage01,
+    title: 'Eros donec ac odio1',
+    label: 'Dec 14th, 2019',
+    description:
+      'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
   },
 ];
 
@@ -122,31 +147,44 @@ const Works = () => {
     2: useScrollFadeIn('up', 1, 0.4),
   };
 
+  const [toggle, setToggle] = useState(false);
+  const [videoId, setVideoId] = useState('x9jIRRqijhY');
+
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+    };
+
+    fetch(
+      'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&type=video&channelId=UCxZg5WfNu6zUGVkxUhoOJJw&key=AIzaSyCcJBMZ-0ObwfzrhEnvdWxLzOoXrAdUp10',
+      requestOptions
+    )
+      .then(response => response.json())
+      .then(result => setVideos(result.items))
+      .catch(error => console.log('error', error));
+  }, []);
+
+  const test = (id)=>{
+    setVideoId(id);
+    setToggle(true)
+  }
   return (
     <S.Wrapper id="pho">
       <S.Label>포트폴리오</S.Label>
       <S.List>
-        {WORKS_ITEMS.map((item, index) => (
+        {videos.map((item, index) => (
           <S.ListItem key={item.title} >
-            <S.ItemImage image={item.image} />
+            <S.ItemImage onClick={()=>test(item.id.videoId)} image={item.snippet.thumbnails.medium.url} />
           </S.ListItem>
         ))}
       </S.List>
-      <S.List>
-        {WORKS_ITEMS.map((item, index) => (
-          <S.ListItem key={item.title} >
-            <S.ItemImage image={item.image} />
-          </S.ListItem>
-        ))}
-      </S.List>
-      <S.List>
-        {WORKS_ITEMS2.map((item, index) => (
-          <S.ListItem key={item.title} >
-            <S.ItemImage image={item.image} />
-          </S.ListItem>
-        ))}
-      </S.List>
-      <a href="https://www.youtube.com/channel/UCxZg5WfNu6zUGVkxUhoOJJw" target="_blank"><Button fill="outline">더보기</Button></a>
+      <a href="https://www.youtube.com/channel/UCxZg5WfNu6zUGVkxUhoOJJw" target="_blank">
+        <Button fill="outline">더보기</Button>
+      </a>
+      {toggle && <YoutubePlay setToggle={setToggle} videoId={videoId} />}
     </S.Wrapper>
   );
 };
