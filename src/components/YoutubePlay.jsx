@@ -34,7 +34,7 @@ const YoutubePlay = ({videoId, setToggle}) => {
       <S.Content>
         <iframe id="player" type="text/html" width="640" height="360"
                 src={`http://www.youtube.com/embed/${videoId}`}
-                frameBorder="0"></iframe>
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
       </S.Content>
     </S.Wrapper>
   )
