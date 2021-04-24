@@ -37,7 +37,7 @@ const Banner = () => {
     <S.Wrapper>
       <S.Label {...animatedItem[0]}>Get Started</S.Label>
       <S.Title {...animatedItem[1]}>
-        Etiam erat velit
+        Etiam erat velit1
         <br />
         scelerisque in dictum
       </S.Title>
