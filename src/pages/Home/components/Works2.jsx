@@ -101,7 +101,7 @@ const Works = () => {
       <S.Label>의뢰하기</S.Label>
       <S.Title>
         Call : 010 - 4584 - 4008 <br />
-        Email : nidnt91@gmail.com
+        Email : nidnt@naver.com
       </S.Title>
       <S.ButtonBox>
         <a href="http://pf.kakao.com/_KxjxixfK" target="_blank"><Button fill="solid" style={{marginRight:'10px'}} >카카오 문의하기</Button></a>
