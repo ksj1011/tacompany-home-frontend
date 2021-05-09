@@ -92,9 +92,9 @@ const Footer = () => (
       <S.Text>
         <span>티에이컴퍼니 대표: 김태식</span>
         <span>사업자등록번호: 750-23-01030</span>
-        <span>전화 상담: 평일 09:30 ~ 18:30 (주말, 공휴일 휴무) +10 4584 4008</span>
+        <span>전화 상담: 평일 8:00~24:00 (주말, 공휴일 동일합니다) +10 4584 4008</span>
         <span>주소: 인천광역시 부평구 부평대로 293, 부평테크시티 B103호</span>
-        <span>메일 상담: nidnt91@gmail.com</span>
+        <span>메일 상담: nidnt@naver.com</span>
       </S.Text>
     </S.Info>
     <S.Bottom>
