@@ -159,7 +159,7 @@ const Works = () => {
     };
 
     fetch(
-      'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&type=video&channelId=UCxZg5WfNu6zUGVkxUhoOJJw&key=AIzaSyCcJBMZ-0ObwfzrhEnvdWxLzOoXrAdUp10',
+      'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&type=video&channelId=UCxZg5WfNu6zUGVkxUhoOJJw&key=AIzaSyCcJBMZ-0ObwfzrhEnvdWxLzOoXrAdUp10&order=date',
       requestOptions
     )
       .then(response => response.json())
