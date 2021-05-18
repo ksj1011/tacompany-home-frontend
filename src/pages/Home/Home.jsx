@@ -5,12 +5,8 @@ import {
   Services,
   Services2,
   Services3,
-  Feature,
-  Figure,
   Works,
   Works2,
-  Contact,
-  Banner,
 } from './components';
 
 const Home = () => {
@@ -21,12 +17,8 @@ const Home = () => {
       <Services />
       <Services2 />
       <Works />
-      {/* <Feature /> */}
       <Services3 />
-      {/* <Figure /> */}
       <Works2 />
-      {/* <Contact /> */}
-      {/* <Banner /> */}
       <Footer />
     </>
   );
