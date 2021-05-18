@@ -131,11 +131,6 @@ const Header = () => {
             </S.NavigationItem>
           ))}
         </S.Navigation>
-        {/* <S.ButtonWrapper>
-          <Button fill="solid" type="button" style={{ marginLeft: 'auto' }}>
-            Get a Quote
-          </Button>
-        </S.ButtonWrapper> */}
       </S.Header>
     </S.Wrapper>
   );

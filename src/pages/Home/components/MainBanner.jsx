@@ -49,7 +49,7 @@ const S = {
   `,
 };
 
-const Hero = () => {
+const MainBanner = () => {
   return (
     <S.Background>
       <S.Wrapper>
@@ -59,12 +59,9 @@ const Hero = () => {
         <S.Description>
           TA Company
         </S.Description>
-        {/* <Button fill="solid" type="button">
-          Our Services
-        </Button> */}
       </S.Wrapper>
     </S.Background>
   );
 };
 
-export default Hero;
+export default MainBanner;

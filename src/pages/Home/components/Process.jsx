@@ -76,9 +76,10 @@ const S = {
   `,
 };
 
-const Services2 = () => {
+const Process = () => {
 
-    const animatedImage = useScrollClipPath();
+  const animatedImage = useScrollClipPath();
+
   return (
     <S.Wrapper id="process">
       <S.Label>제작프로세스</S.Label>
@@ -91,4 +92,4 @@ const Services2 = () => {
   );
 };
 
-export default Services2;
+export default Process;

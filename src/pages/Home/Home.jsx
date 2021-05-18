@@ -1,24 +1,24 @@
 import React from 'react';
 import { Header, Footer } from '../../components';
 import {
-  Hero,
-  Services,
-  Services2,
-  Services3,
-  Works,
-  Works2,
+  MainBanner,
+  Company,
+  Process,
+  Portfolio,
+  Education,
+  Contact,
 } from './components';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Services />
-      <Services2 />
-      <Works />
-      <Services3 />
-      <Works2 />
+      <MainBanner />
+      <Company />
+      <Process />
+      <Portfolio />
+      <Education />
+      <Contact />
       <Footer />
     </>
   );

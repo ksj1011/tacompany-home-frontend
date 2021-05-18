@@ -140,7 +140,7 @@ const WORKS_ITEMS2 = [
   }
 ];
 
-const Works = () => {
+const Portfolio = () => {
   const animatedItem = {
     0: useScrollFadeIn('up', 1),
     1: useScrollFadeIn('up', 1, 0.2),
@@ -189,4 +189,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Portfolio;

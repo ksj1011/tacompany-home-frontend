@@ -77,10 +77,11 @@ const S = {
   `,
 };
 
-const Services2 = () => {
+const Education = () => {
 
-    const animatedImage = useScrollClipPath();
-    const animated = useScrollFadeIn('left', 2, 0);
+  const animatedImage = useScrollClipPath();
+  const animated = useScrollFadeIn('left', 2, 0);
+
   return (
     <S.Wrapper id="youtube">
       <S.Label>유튜버교육</S.Label>
@@ -93,4 +94,4 @@ const Services2 = () => {
   );
 };
 
-export default Services2;
+export default Education;

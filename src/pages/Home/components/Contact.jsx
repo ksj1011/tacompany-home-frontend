@@ -1,85 +1,112 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Button, TextField } from '../../../components';
-import { ceo } from '../../../assets';
+import { worksImage01 } from '../../../assets';
+import { Button } from '../../../components';
 import { useScrollFadeIn } from '../../../hooks';
 
 const S = {
-  Wrapper: styled.section`
+  Wrapper: styled.div`
     width: 100%;
-    width: 1180px;
+    max-width: 1180px;
     margin: auto;
     padding: 120px 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  `,
-  Image: styled.div`
-    width: 322px;
-    height: 500px;
-    background: no-repeat center/cover url(${ceo});
-  `,
-  TextWrapper: styled.div`
-    box-sizing: border-box;
-    width: 700px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   `,
   Label: styled.p`
     display: inline-block;
     ${props => props.theme.typography.label};
-    color: ${props => props.theme.palette.primary};
-    margin-bottom: 1rem;
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
   Title: styled.h2`
     ${props => props.theme.typography.subtitle};
     color: ${props => props.theme.palette.black};
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @media (max-width: 992px){
+        font-size: 1.5rem;
+    }
   `,
   Description: styled.p`
     ${props => props.theme.typography.description};
     color: ${props => props.theme.palette.black};
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   `,
-  Form: styled.form`
+  List: styled.ul`
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    input {
-      margin-bottom: 1rem;
-      width: 70%;
-    }
-    button {
-      width: 70%;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
   `,
+  ListItem: styled.li`
+    width: 380px;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem;
+  `,
+  ItemImage: styled.div`
+    width: 100%;
+    height: 380px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: no-repeat center/cover url(${props => props.image});
+  `,
+  TextContainer: styled.div`
+    padding: 2rem;
+  `,
+  ItemTitle: styled.h3`
+    ${props => props.theme.typography.heading};
+    color: ${props => props.theme.palette.black};
+    margin-bottom: 0.75rem;
+  `,
+  ItemLabel: styled.p`
+    ${props => props.theme.typography.caption};
+    color: ${props => props.theme.palette.gray};
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  `,
+  ItemDesciption: styled.p`
+    ${props => props.theme.typography.description};
+    margin-bottom: 1.5rem;
+  `,
+  TextButton: styled.button`
+    width: fit-content;
+    padding: 0;
+    ${props => props.theme.typography.textbutton};
+    color: ${props => props.theme.palette.secondary};
+    cursor: pointer;
+  `,
+  ButtonBox: styled.div`
+    display: flex;
+`,
 };
+
 
 const Contact = () => {
   const animatedItem = {
-    0: useScrollFadeIn('up', 1, 0),
-    1: useScrollFadeIn('up', 1, 0.2),
-    2: useScrollFadeIn('up', 1, 0.3),
-    3: useScrollFadeIn('up', 1, 0.4),
+    0: useScrollFadeIn('left', 1),
+    1: useScrollFadeIn('left', 1, 0.2),
+    2: useScrollFadeIn('left', 1, 0.4),
   };
 
   return (
-    <S.Wrapper>
-      <S.Image image={ceo} />
-      <S.TextWrapper>
-        <S.Label {...animatedItem[0]}>Contact us</S.Label>
-        <S.Title {...animatedItem[1]}>
-        안녕하세요 티에이 컴퍼니 김태식입니다 <br />
-        티에이컴퍼니는 ‘상상 그 이상’ 이라는 모토를 가지고 회사를 설립하였습니다 <br />
-        다가오는 뉴노멀 시대에 맞추어 그동안 혁신적이지 않고 동일하기만 하였던 영상업에 대해  <br />
-        한걸음더 혁신적인 영상을 만들기 위하여 회사를 설립하였습니다 <br />
-        저희 TA컴퍼니는 일반적인 광고 영상이 아닌 좀더 창의적이며 스토리가있는  <br />
-        영상과 광고를 만들것이며 이는 고객님들께 최선과 열심이 아닌 <br />
-        ‘최고의 영상’으로 여러분들께 보여 드릴것을 약속드립니다
-        </S.Title>
-      </S.TextWrapper>
+    <S.Wrapper id="contact">
+      <S.Label>의뢰하기</S.Label>
+      <S.Title>
+        Call : 010 - 4584 - 4008 <br />
+        Email : nidnt@naver.com
+      </S.Title>
+      <S.ButtonBox>
+        <a href="http://pf.kakao.com/_KxjxixfK" target="_blank"><Button fill="solid" style={{marginRight:'10px'}} >카카오 문의하기</Button></a>
+        <a href="https://forms.gle/gu5qVyekssrEseZp8" target="_blank"><Button>바로 문의하기</Button></a>
+      </S.ButtonBox>
     </S.Wrapper>
   );
 };

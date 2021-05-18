@@ -120,7 +120,7 @@ const SERVICES_ITEMS = [
   },
 ];
 
-const Services = () => {
+const Company = () => {
 
     const animatedImage = useScrollClipPath();
     const animated = useScrollFadeIn('left', 2, 0);
@@ -161,4 +161,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Company;
