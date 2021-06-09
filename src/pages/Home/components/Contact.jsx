@@ -90,11 +90,6 @@ const S = {
 
 
 const Contact = () => {
-  const animatedItem = {
-    0: useScrollFadeIn('left', 1),
-    1: useScrollFadeIn('left', 1, 0.2),
-    2: useScrollFadeIn('left', 1, 0.4),
-  };
 
   return (
     <S.Wrapper id="contact">

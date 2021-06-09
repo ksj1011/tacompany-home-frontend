@@ -141,11 +141,6 @@ const WORKS_ITEMS2 = [
 ];
 
 const Portfolio = () => {
-  const animatedItem = {
-    0: useScrollFadeIn('up', 1),
-    1: useScrollFadeIn('up', 1, 0.2),
-    2: useScrollFadeIn('up', 1, 0.4),
-  };
 
   const [toggle, setToggle] = useState(false);
   const [videoId, setVideoId] = useState('x9jIRRqijhY');

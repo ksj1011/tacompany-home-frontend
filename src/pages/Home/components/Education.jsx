@@ -78,9 +78,7 @@ const S = {
 };
 
 const Education = () => {
-
   const animatedImage = useScrollClipPath();
-  const animated = useScrollFadeIn('left', 2, 0);
 
   return (
     <S.Wrapper id="youtube">

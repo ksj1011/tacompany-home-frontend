@@ -99,33 +99,12 @@ const S = {
 `,
 };
 
-const SERVICES_ITEMS = [
-  {
-    title: 'Volutpat odio',
-    description:
-      'Facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing. In hac habitasse platea dictumst quisque sagittis purus.',
-    button: 'Get started',
-  },
-  {
-    title: 'Diam donec',
-    description:
-      'Adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Pulvinar elementum integer enim neque volutpat ac.',
-    button: 'Switch over',
-  },
-  {
-    title: 'Elit at imperdiet',
-    description:
-      'Dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent.',
-    button: 'Read more',
-  },
-];
-
 const Company = () => {
 
-    const animatedImage = useScrollClipPath();
-    const animated = useScrollFadeIn('left', 2, 0);
+  const animatedImage = useScrollClipPath();
+  const animated = useScrollFadeIn('left', 2, 0);
 
-    const [isScroll, setIsScroll] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
 
   const handleScroll = useCallback(() => {
       console.log(window.pageYOffset);
