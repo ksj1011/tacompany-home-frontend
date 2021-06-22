@@ -80,12 +80,6 @@ const S = {
       color: ${props => props.theme.palette.secondary};
     }
   `,
-  TextButton: styled.button`
-    width: fit-content;
-    ${props => props.theme.typography.textbutton};
-    color: ${props => props.theme.palette.secondary};
-    cursor: pointer;
-  `,
   Image: styled.div`
     width: 375px;
     height: 550px;
