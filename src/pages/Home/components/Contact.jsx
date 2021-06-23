@@ -14,32 +14,6 @@ const S = {
     flex-direction: column;
     align-items: center;
   `,
-  Label: styled.p`
-    display: inline-block;
-    ${props => props.theme.typography.label};
-    color: black;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-
-    @media (max-width: 992px){
-        font-size: 1.2rem;
-    }
-  `,
-  Title: styled.h2`
-    ${props => props.theme.typography.subtitle};
-    color: ${props => props.theme.palette.black};
-    text-align: center;
-    margin-bottom: 3rem;
-
-    @media (max-width: 992px){
-        font-size: 1.5rem;
-    }
-  `,
-  Description: styled.p`
-    ${props => props.theme.typography.description};
-    color: ${props => props.theme.palette.black};
-    margin-bottom: 4rem;
-  `,
   List: styled.ul`
     width: 100%;
     display: flex;

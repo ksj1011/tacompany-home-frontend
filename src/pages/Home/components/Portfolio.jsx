@@ -37,18 +37,6 @@ const S = {
     color: ${props => props.theme.palette.black};
     margin-bottom: 4rem;
   `,
-  // List: styled.ul`
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   margin-bottom: 4rem;
-  // `,
-  // ListItem: styled.li`
-  //   width: 380px;
-  //   box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.03);
-  //   border-radius: 0.5rem;
-  // `,
   List: styled.div`
     width: 100%;
     display: grid;
@@ -93,52 +81,6 @@ const S = {
     cursor: pointer;
   `,
 };
-
-const WORKS_ITEMS = [
-  {
-    image: worksImage01,
-    title: 'Volutpat odio',
-    label: 'Dec 14th, 2019',
-    description:
-      'Facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing. In hac habitasse platea dictumst.',
-  },
-  {
-    image: worksImage01,
-    title: 'Arcu ac tortor dignissim',
-    label: 'Dec 14th, 2019',
-    description:
-      'Convallis aenean et tortor at. Pretium viverra suspendisse potenti nullam ac tortor vitae purus.',
-  },
-  {
-    image: worksImage01,
-    title: 'Eros donec ac odio',
-    label: 'Dec 14th, 2019',
-    description:
-      'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
-  },{
-    image: worksImage01,
-    title: 'Eros donec ac odio2',
-    label: 'Dec 14th, 2019',
-    description:
-      'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
-  },{
-    image: worksImage01,
-    title: 'Eros donec ac odio1',
-    label: 'Dec 14th, 2019',
-    description:
-      'Tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur.',
-  },
-];
-
-const WORKS_ITEMS2 = [
-  {
-    image: worksImage01,
-    title: 'Volutpat odio',
-    label: 'Dec 14th, 2019',
-    description:
-      'Facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing. In hac habitasse platea dictumst.',
-  }
-];
 
 const Portfolio = () => {
 
