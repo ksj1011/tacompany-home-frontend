@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
-import Button from './Button';
 import { talogo } from '../assets';
 import {Link} from 'react-scroll';
 
-//background-color: ${({ isScroll, theme }) => isScroll ? theme.palette.white : 'black'};
 const S = {
   Wrapper: styled.div`
     position: sticky;
@@ -92,8 +90,7 @@ const NAVIGATION_ITEMS = [
         link: 'contact',
         name: '의뢰하기'
     },
-]
-//const NAVIGATION_ITEMS = ['회사소개', '포트폴리오', '유튜버교육', '직원소개', '의뢰하기'];
+];
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false);

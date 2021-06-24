@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
-import TextField from './TextField';
 import {talogoblack} from '../assets';
 
 const S = {
