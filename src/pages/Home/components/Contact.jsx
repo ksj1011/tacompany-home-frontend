@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { worksImage01 } from '../../../assets';
 import { Button } from '../../../components';
-import { useScrollFadeIn } from '../../../hooks';
 
 const S = {
   Wrapper: styled.div`
@@ -64,7 +62,6 @@ const S = {
 
 
 const Contact = () => {
-
   return (
     <S.Wrapper id="contact">
       <S.Label>의뢰하기</S.Label>
