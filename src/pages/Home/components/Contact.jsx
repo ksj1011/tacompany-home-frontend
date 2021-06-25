@@ -12,48 +12,26 @@ const S = {
     flex-direction: column;
     align-items: center;
   `,
-  List: styled.ul`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+  Label: styled.p`
+    display: inline-block;
+    ${props => props.theme.typography.label};
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+
+    @media (max-width: 992px){
+        font-size: 1.2rem;
+    }
   `,
-  ListItem: styled.li`
-    width: 380px;
-    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.03);
-    border-radius: 0.5rem;
-  `,
-  ItemImage: styled.div`
-    width: 100%;
-    height: 380px;
-    border-radius: 0.5rem 0.5rem 0 0;
-    background: no-repeat center/cover url(${props => props.image});
-  `,
-  TextContainer: styled.div`
-    padding: 2rem;
-  `,
-  ItemTitle: styled.h3`
-    ${props => props.theme.typography.heading};
+  Title: styled.h2`
+    ${props => props.theme.typography.subtitle};
     color: ${props => props.theme.palette.black};
-    margin-bottom: 0.75rem;
-  `,
-  ItemLabel: styled.p`
-    ${props => props.theme.typography.caption};
-    color: ${props => props.theme.palette.gray};
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-  `,
-  ItemDesciption: styled.p`
-    ${props => props.theme.typography.description};
-    margin-bottom: 1.5rem;
-  `,
-  TextButton: styled.button`
-    width: fit-content;
-    padding: 0;
-    ${props => props.theme.typography.textbutton};
-    color: ${props => props.theme.palette.secondary};
-    cursor: pointer;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @media (max-width: 992px){
+        font-size: 1.5rem;
+    }
   `,
   ButtonBox: styled.div`
     display: flex;
