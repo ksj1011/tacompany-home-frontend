@@ -5,5 +5,5 @@ export { default as featureImage } from './img-feature.jpg';
 export { default as worksImage01 } from './work.jpeg';
 export { default as contactImage } from './img-contact.jpg';
 export { default as ceo } from './ceo.jpeg';
-export { default as test1 } from './test1.png';
-export { default as test2 } from './test2.png';
+export { default as process } from './process.png';
+export { default as youtube } from './youtube.png';

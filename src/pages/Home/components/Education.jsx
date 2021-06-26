@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useScrollFadeIn } from '../../../hooks';
 import { useScrollClipPath } from '../../../hooks';
-import { test2 } from '../../../assets';
+import { youtube } from '../../../assets';
 const S = {
   Wrapper: styled.section`
     width: 100%;
@@ -85,7 +84,7 @@ const Education = () => {
       <S.Label>유튜버교육</S.Label>
       <S.Box>
       <S.ImageBox {...animatedImage}>
-            <S.Image src={test2} alt="제작프로세스" />
+            <S.Image src={youtube} alt="제작프로세스" />
         </S.ImageBox>
       </S.Box>
     </S.Wrapper>

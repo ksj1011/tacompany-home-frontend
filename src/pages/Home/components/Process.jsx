@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useScrollClipPath } from '../../../hooks';
-import { test1 } from '../../../assets';
+import { process } from '../../../assets';
 const S = {
   Wrapper: styled.section`
     width: 100%;
@@ -85,7 +85,7 @@ const Process = () => {
       <S.Label>제작프로세스</S.Label>
       <S.Box>
         <S.ImageBox {...animatedImage}>
-            <S.Image src={test1} alt="제작프로세스" />
+            <S.Image src={process} alt="제작프로세스" />
         </S.ImageBox>
       </S.Box>
     </S.Wrapper>
