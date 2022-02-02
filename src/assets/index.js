@@ -7,3 +7,6 @@ export { default as contactImage } from './img-contact.jpg';
 export { default as ceo } from './ceo.jpeg';
 export { default as process } from './process.png';
 export { default as youtube } from './youtube.png';
+export { default as chroma } from './chroma.png';
+export { default as live } from './live.png';
+export { default as withTa } from './with.png';

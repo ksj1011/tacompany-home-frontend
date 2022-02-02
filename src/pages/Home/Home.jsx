@@ -7,6 +7,9 @@ import {
   Portfolio,
   Education,
   Contact,
+  Chroma,
+  Live,
+  With,
 } from './components';
 
 const Home = () => {
@@ -15,9 +18,12 @@ const Home = () => {
       <Header />
       <MainBanner />
       <Company />
+      <Chroma />
+      <Live />
       <Process />
       <Portfolio />
       <Education />
+      <With />
       <Contact />
       <Footer />
     </>
