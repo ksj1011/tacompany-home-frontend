@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/tacompany-home-frontend/static/js/main.e34bb433.chunk.js",
-    "main.js.map": "/tacompany-home-frontend/static/js/main.e34bb433.chunk.js.map",
+    "main.js": "/tacompany-home-frontend/static/js/main.6d7b4170.chunk.js",
+    "main.js.map": "/tacompany-home-frontend/static/js/main.6d7b4170.chunk.js.map",
     "runtime-main.js": "/tacompany-home-frontend/static/js/runtime-main.a6ea476b.js",
     "runtime-main.js.map": "/tacompany-home-frontend/static/js/runtime-main.a6ea476b.js.map",
     "static/js/2.33931f4b.chunk.js": "/tacompany-home-frontend/static/js/2.33931f4b.chunk.js",
     "static/js/2.33931f4b.chunk.js.map": "/tacompany-home-frontend/static/js/2.33931f4b.chunk.js.map",
     "index.html": "/tacompany-home-frontend/index.html",
-    "precache-manifest.d6a65a587a16d79e88a3762fcd4a2ccf.js": "/tacompany-home-frontend/precache-manifest.d6a65a587a16d79e88a3762fcd4a2ccf.js",
+    "precache-manifest.4b5fda48557665c33a4f2309754bdfc0.js": "/tacompany-home-frontend/precache-manifest.4b5fda48557665c33a4f2309754bdfc0.js",
     "service-worker.js": "/tacompany-home-frontend/service-worker.js",
     "static/js/2.33931f4b.chunk.js.LICENSE.txt": "/tacompany-home-frontend/static/js/2.33931f4b.chunk.js.LICENSE.txt",
     "static/media/bg-hero.png": "/tacompany-home-frontend/static/media/bg-hero.5cd57558.png",
@@ -24,6 +24,6 @@
   "entrypoints": [
     "static/js/runtime-main.a6ea476b.js",
     "static/js/2.33931f4b.chunk.js",
-    "static/js/main.e34bb433.chunk.js"
+    "static/js/main.6d7b4170.chunk.js"
   ]
 }
