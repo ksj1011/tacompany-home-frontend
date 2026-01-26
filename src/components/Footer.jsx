@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {talogoblack} from '../assets';
+import {talogo} from '../assets';
 
 const S = {
   Wrapper: styled.footer`
@@ -17,7 +17,7 @@ const S = {
   `,
   Logo: styled.span`
     ${props => props.theme.typography.label};
-    color: ${props => props.theme.palette.darkgray};
+    color: ${props => props.theme.palette.textPrimary};
     display: inline-block;
     font-weight: 900;
     font-size: 1.5rem;
@@ -25,13 +25,13 @@ const S = {
   `,
   Text: styled.p`
     ${props => props.theme.typography.body};
-    color: ${props => props.theme.palette.gray};
+    color: ${props => props.theme.palette.textSecondary};
     span {
       display: block;
       margin-bottom: 1.5rem;
       font-size: 0.8rem;
     }
-    
+
   `,
   Menu: styled.ul`
     flex: 0 0 20%;
@@ -46,12 +46,13 @@ const S = {
   `,
   MenuItem: styled.a`
     ${props => props.theme.typography.body};
-    color: ${props => props.theme.palette.gray};
+    color: ${props => props.theme.palette.textSecondary};
     display: inline-block;
     margin-bottom: 1.5rem;
     cursor: pointer;
     &:hover {
-      opacity: 0.5;
+      color: ${props => props.theme.palette.primary};
+      opacity: 1;
     }
   `,
   Subscribe: styled.div`
@@ -69,7 +70,7 @@ const S = {
   `,
   Bottom: styled.div`
     width: 100%;
-    color: ${props => props.theme.palette.gray};
+    color: ${props => props.theme.palette.textSecondary};
     margin-top: 50px;
     padding-top: 30px;
     display: flex;
@@ -85,7 +86,7 @@ const Footer = () => (
   <S.Wrapper>
     <S.Info>
       <S.Logo>
-          <img src={talogoblack} width="133" alt="TAcompany" />
+          <img src={talogo} width="133" alt="TAcompany" />
       </S.Logo>
       <S.Text>
         <span>티에이컴퍼니 대표: 김태식</span>
