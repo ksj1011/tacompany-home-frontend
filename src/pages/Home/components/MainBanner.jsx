@@ -27,7 +27,7 @@ const S = {
   `,
   Title: styled.p`
     ${props => props.theme.typography.title};
-    color: #fff;
+    color: ${props => props.theme.palette.white};
     margin-bottom: 0.5rem;
     font-size: 2rem;
     padding-left: 5px;

@@ -9,7 +9,7 @@ const S = {
     top: -1px;
     z-index: 1000;
     transition: all 0.2s ease-in-out;
-    background-color: black;
+    background-color: ${props => props.theme.palette.black};
     box-shadow: none;
     padding: 0 10px;
  `,
