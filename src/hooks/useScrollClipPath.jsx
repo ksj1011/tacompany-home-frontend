@@ -37,7 +37,10 @@ const useScrollClipPath = (direction = 'left', duration = 1, delay = 0) => {
     let observer;
 
     if (element.current) {
-      observer = new IntersectionObserver(onScroll, { threshold: 0.7 });
+      observer = new IntersectionObserver(onScroll, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
       observer.observe(element.current.parentNode);
     }
 

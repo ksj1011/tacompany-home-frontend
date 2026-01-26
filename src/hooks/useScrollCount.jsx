@@ -25,7 +25,10 @@ const useScrollCount = (end, start = 0, duration = 3000, delay = 0) => {
 
   useEffect(() => {
     if (element.current) {
-      observer.current = new IntersectionObserver(onScroll, { threshold: 0.7 });
+      observer.current = new IntersectionObserver(onScroll, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
       observer.current.observe(element.current);
     }
 
