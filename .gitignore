@@ -27,4 +27,5 @@ yarn-error.log*
 
 # Claude Code settings
 .claude/
+.omc/
 .vercel
