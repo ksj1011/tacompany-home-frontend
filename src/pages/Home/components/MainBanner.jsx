@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { heroBackground } from '../../../assets';
-import { Button } from '../../../components';
 
 const S = {
   Background: styled.section`
